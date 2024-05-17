@@ -1,0 +1,73 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.drum-machine-container {
+    border: 5px solid orange;
+    display: flex;
+    width: 550px;
+    height: 300px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    grid-gap: 5px; /* Espacement entre les boutons */
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.controls > * {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-left: 50px;
+     /*
+    By setting margin-left: auto;, you're telling the browser to push the .controls div 
+    as far to the right as possible within its container (.drum-machine-container), while 
+    still respecting any space taken by other elements within the same container.
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    background-color: ghostwhite;
+    width: 150px;
+    height: 30px;
+}
+.form-range{
+    width : 170px
+}
+
+button {
+    font-size: 2em;
+    margin: 5px;
+    cursor: pointer;
+    width: 65px;
+    background-color: rgb(107, 107, 107);
+    box-shadow: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:active{
+    background-color: orange;
+    transition: 0.2s ease;
+}
+
+.active{
+    background-color : orange;
+}
+
+.power, .bank{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
